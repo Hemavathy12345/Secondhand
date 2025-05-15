@@ -1,0 +1,84 @@
+.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+.login:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.login h2 {
+  text-align: center;
+  color: #222;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form > div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+form input {
+  padding: 12px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+form input:focus {
+  border-color: #4c87af;
+  box-shadow: 0 0 8px rgba(76, 150, 175, 0.4);
+  outline: none;
+}
+button {
+  padding: 12px 0;
+  background: linear-gradient(45deg, #28a1a7, #217888);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(45deg, #218881, #1e687e);
+  box-shadow: 0 4px 12px rgba(33, 98, 136, 0.6);
+}
+.error {
+  color: #d32f2f;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+@media (max-width: 480px) {
+  .login {
+    margin: 20px 15px;
+    padding: 25px 20px;
+  }
+  .login h2 {
+    font-size: 1.6rem;
+  }
+  form input {
+    font-size: 0.95rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+}
